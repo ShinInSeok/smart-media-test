@@ -1,12 +1,9 @@
 package main
 
-import (
-	"shininseok/test2557"
-)
+import "shininseok/test10718"
 
 func main() {
-
-	test2557.Test2557()
+	test10718.Test10718()
 	// 같은 형식의 출력
 	//********************************************************************
 	//1.
