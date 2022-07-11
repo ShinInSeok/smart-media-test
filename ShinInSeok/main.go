@@ -1,48 +1,50 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
+	"strconv"
+	"strings"
 )
 
 func main() {
-	// br := bufio.NewReader(os.Stdin)
-	// str, _ := br.ReadString('\n')
+	br := bufio.NewReader(os.Stdin)
+	str, _ := br.ReadString(('\n'))
+	//str2, _ := br.ReadString(('\n'))
 
-	// split := strings.Fields(str)
+	split := strings.Fields(str)
+	// split2 := strings.Fields(str2)
 
-	// first := split[0]
-	// second := split[1]
-	// //third := split[2]
+	first := split[0]
+	second := split[1]
+	third := split[2]
 
-	// num1, _ := strconv.Atoi(first)
-	// num2, _ := strconv.Atoi(second)
-	// //num3, _ := strconv.Atoi(third)
+	a, _ := strconv.Atoi(first)
+	b, _ := strconv.Atoi(second)
+	c, _ := strconv.Atoi(third)
 
-	// // if (num1+num2)%num3 == ((num1 % num3) + (num2%num3)%num3){
-	// // 	fmt.Println()
-	// // }
-
-	// fmt.Println(num1 * (num2 % 10))
-
-	// fmt.Println(num1 * ((num2 / 10) % 10))
-
-	// fmt.Println(num1 * (((num2 / 10) / 10) % 10))
-
-	// fmt.Println(num1 * num2)
-
-	fmt.Println("         ,r'\"7\n" +
-		"r`-_   ,'  ,/\n" +
-		" \\. \". L_r'\n" +
-		"   `~\\/\n" +
-		"      |\n" +
-		"      |")
-
-	// fmt.Print(first + "??!")
-	// fmt.Println(num1 + num2)
-	// fmt.Println(num1 - num2)
-	// fmt.Println(num1 * num2)
-	// fmt.Println(num1 / num2)
-	// fmt.Println(num1 % num2)
+	if a == b && b == c && a == c {
+		fmt.Println(10000 + a*1000)
+	}
+	if a == b && b != c {
+		fmt.Println(1000 + a*100)
+	}
+	if a == c && a != b {
+		fmt.Println(1000 + c*100)
+	}
+	if b == c && a != c {
+		fmt.Println(1000 + b*100)
+	}
+	if a > b && a > c && c != a && c != b && a != b {
+		fmt.Println(a * 100)
+	}
+	if a < b && b > c && a != c && a != b && c != b {
+		fmt.Println(b * 100)
+	}
+	if a < c && b < c && c != a && c != b && a != b {
+		fmt.Println(c * 100)
+	}
 
 	// 같은 형식의 출력
 	//********************************************************************

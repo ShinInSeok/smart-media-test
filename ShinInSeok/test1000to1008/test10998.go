@@ -1,4 +1,4 @@
-package test10869
+package test1000to1008
 
 import (
 	"bufio"
@@ -8,7 +8,8 @@ import (
 	"strings"
 )
 
-func Test10869{
+func Test10998() {
+
 	br := bufio.NewReader(os.Stdin)
 	str, _ := br.ReadString('\n')
 
@@ -20,9 +21,5 @@ func Test10869{
 	num1, _ := strconv.Atoi(first)
 	num2, _ := strconv.Atoi(second)
 
-	fmt.Println(num1 + num2)
-	fmt.Println(num1 - num2)
 	fmt.Println(num1 * num2)
-	fmt.Println(num1 / num2)
-	fmt.Println(num1 % num2)
 }

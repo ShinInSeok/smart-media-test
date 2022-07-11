@@ -1,4 +1,4 @@
-package test1000to1008
+package test1330
 
 import (
 	"bufio"
@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 )
-func Test10998{
 
+func Test1330() {
 	br := bufio.NewReader(os.Stdin)
 	str, _ := br.ReadString('\n')
 
@@ -20,5 +20,13 @@ func Test10998{
 	num1, _ := strconv.Atoi(first)
 	num2, _ := strconv.Atoi(second)
 
-	fmt.Println(num1 * num2)
+	if num1 > num2 {
+		fmt.Println(">")
+	}
+	if num1 < num2 {
+		fmt.Println("<")
+	}
+	if num1 == num2 {
+		fmt.Println("==")
+	}
 }
