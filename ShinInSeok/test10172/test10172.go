@@ -2,7 +2,7 @@ package test10172
 
 import "fmt"
 
-func test10172() {
+func Test10172() {
 	fmt.Println("|\\_/|")
 	fmt.Println("|q p|   /}")
 	fmt.Println("( 0 )\"\"\"\\")

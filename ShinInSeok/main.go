@@ -1,6 +1,48 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
+	// br := bufio.NewReader(os.Stdin)
+	// str, _ := br.ReadString('\n')
+
+	// split := strings.Fields(str)
+
+	// first := split[0]
+	// second := split[1]
+	// //third := split[2]
+
+	// num1, _ := strconv.Atoi(first)
+	// num2, _ := strconv.Atoi(second)
+	// //num3, _ := strconv.Atoi(third)
+
+	// // if (num1+num2)%num3 == ((num1 % num3) + (num2%num3)%num3){
+	// // 	fmt.Println()
+	// // }
+
+	// fmt.Println(num1 * (num2 % 10))
+
+	// fmt.Println(num1 * ((num2 / 10) % 10))
+
+	// fmt.Println(num1 * (((num2 / 10) / 10) % 10))
+
+	// fmt.Println(num1 * num2)
+
+	fmt.Println("         ,r'\"7\n" +
+		"r`-_   ,'  ,/\n" +
+		" \\. \". L_r'\n" +
+		"   `~\\/\n" +
+		"      |\n" +
+		"      |")
+
+	// fmt.Print(first + "??!")
+	// fmt.Println(num1 + num2)
+	// fmt.Println(num1 - num2)
+	// fmt.Println(num1 * num2)
+	// fmt.Println(num1 / num2)
+	// fmt.Println(num1 % num2)
 
 	// 같은 형식의 출력
 	//********************************************************************
